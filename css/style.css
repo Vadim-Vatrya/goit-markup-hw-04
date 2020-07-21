@@ -18,6 +18,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
 html {
   box-sizing: border-box;
 }
@@ -126,6 +127,17 @@ img {
   padding-bottom: 32px;
 }
 
+.site-nav-list.current {
+  padding-bottom: 0;
+}
+.site-nav-list.current::after {
+  content: "";
+  display: block;
+  margin-top: 28px;
+  border-radius: 1px;
+  height: 4px;
+  background-color: var(--accent-color);
+}
 .auth-nav {
   display: flex;
   align-items: center;
@@ -153,17 +165,45 @@ img {
   color: var(--accent-color);
 }
 
+.auth-nav-list {
+  display: inline-flex;
+  align-items: center;
+}
+
+.auth-nav-list::before {
+  content: "";
+  margin-right: 10px;
+}
+
+.mail::before {
+  width: 16px;
+  height: 11.2px;
+  background-image: url(../images/Header/envelope.svg);
+}
+
+.mobile::before {
+  width: 10px;
+  height: 14.94px;
+  background-image: url(../images/header/smartphone.svg);
+}
 /* Hero */
 
 .hero {
   text-align: center;
-  margin-bottom: 30px;
-}
-
-.hero .container-hero {
-  background-color: var(--primary-bcg-color);
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/Hero/Herois.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-item {
