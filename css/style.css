@@ -37,7 +37,6 @@ html {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--primary-white-color);
 }
 
 img {
@@ -346,13 +345,15 @@ img {
 
 .team {
   background-color: var(--secondary-bcg-color);
-}
-
-.team .container {
-  background-color: var(--secondary-bcg-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+/* .team .container {
+  background-color: var(--secondary-bcg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+} */
 
 .team-title {
   display: flex;
@@ -363,6 +364,8 @@ img {
   background-color: var(--primary-white-color);
   border: 1px solid #eeeeee;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .team-title-info {
@@ -382,7 +385,7 @@ img {
 
 .social-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding-bottom: 24px;
 }
 
@@ -457,11 +460,36 @@ img {
 
 .title-list {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 .title-list-icon:not(:last-child) {
   margin-right: 10px;
+}
+
+.title-list-icon {
+  display: block;
+  height: 44px;
+  width: 44px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.instagram {
+  background-image: url(../images/Footer/instagram.svg);
+}
+
+.facebook {
+  background-image: url(../images/Footer/facebook.svg);
+}
+
+.twitter {
+  background-image: url(../images/Footer/twitter.svg);
+}
+
+.linkedin {
+  background-image: url(../images/Footer/linkedin.svg);
 }
 
 .mail,
@@ -516,7 +544,10 @@ img {
 
 .button-filtr:hover,
 .button-filtr:focus {
-  color: var(--accent-color);
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 .card-list {
@@ -537,7 +568,9 @@ img {
 }
 
 .card-content {
-  border: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
