@@ -382,9 +382,8 @@ img {
   color: var(--primary-white-color);
 }
 
-.social-list a {
-  color: var(--socials-main-color);
-}
+
+
 /* Clients */
 
 .client-list {
@@ -412,6 +411,17 @@ img {
   fill: var(--accent-color);
 }
 
+.item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+}
+
+.client_logo {
+  fill: var(--socials-main-color);
+}
 
 /* footer */
 
@@ -512,11 +522,12 @@ img {
 
 /* portfolio */
 
-.filtr-list {
+.filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+      margin-bottom: 34px;
+    justify-content: center;
 }
+
 
 .filtr-list-button:not(:last-child) {
   margin-right: 8px;
