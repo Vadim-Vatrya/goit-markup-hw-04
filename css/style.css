@@ -504,13 +504,7 @@ img {
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
-
-.footer-icon-list {
-  width: 20px;
-  height: 20px;
-  fill: var();
-}
---primary-white-color .footer-icon {
+.footer-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -523,8 +517,13 @@ img {
 .footer-icon-list {
   width: 20px;
   height: 20px;
+  fill: var(--primary-white-color);
 }
 
+.footer-icon:hover,
+.footer-icon:focus {
+  background-color: var(--accent-color);
+}
 /* portfolio */
 
 .filtr-list {
